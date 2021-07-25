@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Retro Car Racing</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="index.js"></script>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+<body>
+	<section class="level">
+		&nbsp;&nbsp; Level : 
+		<select class="select-label">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+		</select>
+	</section>
+	<section class="playingarea">
+		<div class="wall" data-l="0" data-t="-83"></div>
+		<div class="wall" data-l="0" data-t="0"></div>
+		<div class="wall" data-l="0" data-t="83"></div>
+		<div class="wall" data-l="0" data-t="166"></div>
+		<div class="wall" data-l="0" data-t="249"></div>
+		<div class="wall" data-l="0" data-t="332"></div>
+		<div class="wall" data-l="0" data-t="415"></div>
+		<div class="wall" data-l="0" data-t="498"></div>
+
+		<div class="car main" data-l="42" data-b="42"></div>
+		<!-- <div class="car other" data-l="200" data-t="42"></div> -->
+
+
+		<div class="wall" data-l="285" data-t="-83"></div>
+		<div class="wall" data-l="285" data-t="0"></div>
+		<div class="wall" data-l="285" data-t="83"></div>
+		<div class="wall" data-l="285" data-t="166"></div>
+		<div class="wall" data-l="285" data-t="249"></div>
+		<div class="wall" data-l="285" data-t="332"></div>
+		<div class="wall" data-l="285" data-t="415"></div>
+		<div class="wall" data-l="285" data-t="498"></div>
+	</section>
+	<section class="controls">
+		<button class="startGame">START</button>
+	</section>
+	<section class="score-container">
+		<span>HIGH SCORE : &nbsp;&nbsp;&nbsp; <b class="high-score">0</b></span>
+		<span>YOUR SCORE : &nbsp;&nbsp;&nbsp; <b class="score">0</b></span>
+	</section>
+	<section class="github">
+		<a class="github-button" href="https://github.com/vishal-pandey/9999-brick-game-car-racing" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" width="33" height="33"></a>
+	</section>
+
+	<section class="footer">
+		<a href="https://www.vishalpandey.co.in/" target="_blank">Developed By Vishal Pandey</a>
+	</section>
+
+<audio id="start">
+  <source src="sounds/start.wav" type="audio/wav">
+</audio>
+
+<audio id="over">
+  <source src="sounds/over.wav" type="audio/wav">
+</audio>
+
+<audio id="crash">
+  <source src="sounds/crash.wav" type="audio/wav">
+</audio>
+
+<audio id="boot">
+  <source src="sounds/boot.wav" type="audio/wav">
+</audio>
+
+
+
+
+
+
+
+</body>
+</html>
+
+<style type="text/css">
+	.car.other{
+		transform: rotate(180deg);
+	}
+</style>
